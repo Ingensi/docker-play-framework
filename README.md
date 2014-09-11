@@ -7,5 +7,11 @@ Docker image which contains an installation of play 2 framwork.
 Your play app has to be monted in the container in the '/app' directory as follows:
 
 ```
-docker run -d -v /app:/path/to/your/play/app:rw 9000:xxxx ingensi/play-framework
+docker run -d -v /app:/path/to/your/play/app:rw ingensi/play-framework
+```
+
+By default, if no port is specified, your app will be availeble on port 9001 from the host. You can override this mapping by setting manually the port:
+
+```
+docker run -d -v /app:/path/to/your/play/app:rw -p 9000:xxxx ingensi/play-framework
 ```
