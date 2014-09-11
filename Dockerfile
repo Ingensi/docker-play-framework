@@ -8,5 +8,6 @@ ENV PATH $PATH:/activator-1.2.10
 
 EXPOSE 9000 9001
 
+RUN mkdir /app
 WORKDIR /app
 CMD ["activator", "run"]
