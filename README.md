@@ -13,5 +13,5 @@ docker run -d -v /path/to/your/play/app:/app:rw ingensi/play-framework
 By default, if no port is specified, your app will be availeble on port 9001 from the host. You can override this mapping by setting manually the port:
 
 ```
-docker run -d -v /path/to/your/play/app:/app:rw -p 9000:xxxx ingensi/play-framework
+docker run -d -v /path/to/your/play/app:/app:rw -p 80:9000 ingensi/play-framework
 ```
