@@ -1,6 +1,6 @@
 # play-framework
 
-Docker image which provides a typesafe activator 1.2.10, designed to launch play applications (v2.3+).
+Docker image which provides the play framework 2.2.0.
 
 ## Run your app
 
