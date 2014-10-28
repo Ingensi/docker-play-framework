@@ -10,10 +10,11 @@ Here is an example of a docker run command:
 
 ```
 docker run -d \ 
-  -v /path/to/your/play/app:/app:rw ingensi/play-framework
-  -p 80:9000
+  -v /path/to/your/play/app:/app:rw \
+  -p 80:9000 \
+  ingensi/play-framework
 ```
 
 ## Image inheritance
 
-This docker image inherits from the ingeni/oracle-jdk image. It includes an oracle jdk install in its latest version.
+This docker image inherits from the ingeni/oracle-jdk:centos6-latest image. It includes an oracle jdk install in its latest version, based on a centos6.
