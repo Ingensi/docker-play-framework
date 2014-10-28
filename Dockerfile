@@ -1,4 +1,4 @@
-FROM ingensi/oracle-jdk
+FROM ingensi/oracle-jdk:centos6-latest
 MAINTAINER Ingensi labs <contact@ingensi.com>
 
 RUN yum update -y && yum install -y unzip
