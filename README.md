@@ -10,8 +10,9 @@ Here is an example of a docker run command:
 
 ```
 docker run -d \ 
-  -v /path/to/your/play/app:/app:rw ingensi/play-framework
-  -p 80:9000
+  -v /path/to/your/play/app:/app:rw \
+  -p 80:9000 \
+  ingensi/play-framework
 ```
 
 ## Image inheritance
