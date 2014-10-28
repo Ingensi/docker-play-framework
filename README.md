@@ -1,11 +1,19 @@
 # play-framework
 
-Docker image which contains an installation of play 2 framwork.
+Docker image which provides a typesafe activator 1.2.10, designed to launch play applications (v2.3+).
 
 ## Run your app
 
-Your play app has to be monted in the container in the '/app' directory as follows:
+Your play app has to be mounted in the container in the '/app' directory. Should you want to publish your app port to the host, you must use the -p argument.
+
+Here is an example of a docker run command:
 
 ```
-docker run -d -v /path/to/your/play/app:/app:rw ingensi/play-framework
+docker run -d \ 
+  -v /path/to/your/play/app:/app:rw ingensi/play-framework
+  -p 80:9000
 ```
+
+## Image inheritance
+
+This docker image inherits from the ingeni/oracle-jdk image. It includes an oracle jdk install in its latest version.
