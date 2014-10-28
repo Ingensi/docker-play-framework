@@ -16,4 +16,4 @@ docker run -d \
 
 ## Image inheritance
 
-This docker image inherits from the ingeni/oracle-jdk image. It includes an oracle jdk install in its latest version.
+This docker image inherits from the ingeni/oracle-jdk:centos6-latest image. It includes an oracle jdk install in its latest version, based on a centos6.
