@@ -9,7 +9,7 @@ Your play app has to be mounted in the container in the '/app' directory. Should
 Here is an example of a docker run command:
 
 ```
-docker run -d \ 
+docker run -d \
   -v /path/to/your/play/app:/app:rw \
   -p 80:9000 \
   ingensi/play-framework
