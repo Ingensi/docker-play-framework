@@ -9,7 +9,7 @@ Docker image which provides a typesafe activator 1.3.2, designed to launch play 
 
 ## Run your app
 
-Your play app has to be mounted in the container in the '/app' directory. Should you want to publish your app port to the host, you must use the -p argument.
+Your play app has to be mounted in the container in the `/app` directory. Should you want to publish your app port to the host, you must use the -p argument.
 
 Here is an example of a docker run command:
 
@@ -19,6 +19,16 @@ docker run -d \
   -p 80:9000 \
   ingensi/play-framework
 ```
+In some cases, you'll need to run play with the current user:
+
+```
+docker run -d \
+  -v /path/to/your/play/app:/app:rw \
+  -p 80:9000 \
+  -u $(id -u)
+  ingensi/play-framework
+```
+
 
 You can also package your app, in order to do that, create a `Dockerfile` like it:
 
