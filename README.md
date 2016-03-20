@@ -34,7 +34,7 @@ You can also package your app, in order to do that, create a `Dockerfile` like i
 
 ```
 FROM ingensi/play-framework:latest
-MAINTERNER <your@email.com>
+MAINTAINER <your@email.com>
 
 ADD /path/to/my/play-src /app
 ```
